@@ -407,8 +407,34 @@ namespace NotepadMFI
             gamma.GammaValue = keyBox.Text;
             var child = (ChildForm)this.ActiveMdiChild;
             var dataText = child.TextBox.Text;
-            var result = gamma.Decrypt(dataText);
-            child.TextBox.Text = result;
+            if (keyBox.Text.Length > 0) {
+                var result = gamma.Decrypt(dataText);
+                child.TextBox.Text = result;
+            }
+        }
+
+        private void encryptToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Vinezher vinezher = new Vinezher();
+            var child = (ChildForm)this.ActiveMdiChild;
+            var dataText = child.TextBox.Text;
+            if (keyBox.Text.Length > 0)
+            {
+                var result = vinezher.Encrypt(dataText, keyBox.Text);
+                child.TextBox.Text = result;
+            }
+        }
+
+        private void decryptToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Vinezher vinezher = new Vinezher();
+            var child = (ChildForm)this.ActiveMdiChild;
+            var dataText = child.TextBox.Text;
+            if (keyBox.Text.Length > 0)
+            {
+                var result = vinezher.Decrypt(dataText, keyBox.Text);
+                child.TextBox.Text = result;
+            }
         }
     }
 }
