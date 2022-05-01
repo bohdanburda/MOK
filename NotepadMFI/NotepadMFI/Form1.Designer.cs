@@ -91,6 +91,9 @@
             this.keyBox = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.gammaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encryptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.decodeToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -403,7 +406,8 @@
             // otherMethodsToolStripMenuItem
             // 
             this.otherMethodsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.trithemiusToolStripMenuItem});
+            this.trithemiusToolStripMenuItem,
+            this.gammaToolStripMenuItem});
             this.otherMethodsToolStripMenuItem.Name = "otherMethodsToolStripMenuItem";
             this.otherMethodsToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.otherMethodsToolStripMenuItem.Text = "Other methods";
@@ -424,7 +428,7 @@
             this.encodeToolStripMenuItem1,
             this.decodeToolStripMenuItem});
             this.encodeToolStripMenuItem.Name = "encodeToolStripMenuItem";
-            this.encodeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.encodeToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.encodeToolStripMenuItem.Text = "Liniar";
             // 
             // encodeToolStripMenuItem1
@@ -447,7 +451,7 @@
             this.encodeToolStripMenuItem2,
             this.decodeToolStripMenuItem1});
             this.unLiniarToolStripMenuItem.Name = "unLiniarToolStripMenuItem";
-            this.unLiniarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.unLiniarToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.unLiniarToolStripMenuItem.Text = "UnLiniar";
             // 
             // encodeToolStripMenuItem2
@@ -470,20 +474,20 @@
             this.encodeToolStripMenuItem3,
             this.decodeToolStripMenuItem2});
             this.hasloToolStripMenuItem.Name = "hasloToolStripMenuItem";
-            this.hasloToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.hasloToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.hasloToolStripMenuItem.Text = "Haslo";
             // 
             // encodeToolStripMenuItem3
             // 
             this.encodeToolStripMenuItem3.Name = "encodeToolStripMenuItem3";
-            this.encodeToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
+            this.encodeToolStripMenuItem3.Size = new System.Drawing.Size(144, 26);
             this.encodeToolStripMenuItem3.Text = "Encode";
             this.encodeToolStripMenuItem3.Click += new System.EventHandler(this.encodeToolStripMenuItem3_Click);
             // 
             // decodeToolStripMenuItem2
             // 
             this.decodeToolStripMenuItem2.Name = "decodeToolStripMenuItem2";
-            this.decodeToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.decodeToolStripMenuItem2.Size = new System.Drawing.Size(144, 26);
             this.decodeToolStripMenuItem2.Text = "Decode";
             this.decodeToolStripMenuItem2.Click += new System.EventHandler(this.decodeToolStripMenuItem2_Click);
             // 
@@ -627,6 +631,29 @@
             this.toolStripButton4.Text = "FrequencyTable";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
+            // gammaToolStripMenuItem
+            // 
+            this.gammaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.encryptToolStripMenuItem,
+            this.decodeToolStripMenuItem3});
+            this.gammaToolStripMenuItem.Name = "gammaToolStripMenuItem";
+            this.gammaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gammaToolStripMenuItem.Text = "Gamma";
+            // 
+            // encryptToolStripMenuItem
+            // 
+            this.encryptToolStripMenuItem.Name = "encryptToolStripMenuItem";
+            this.encryptToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.encryptToolStripMenuItem.Text = "Encode";
+            this.encryptToolStripMenuItem.Click += new System.EventHandler(this.encryptToolStripMenuItem_Click);
+            // 
+            // decodeToolStripMenuItem3
+            // 
+            this.decodeToolStripMenuItem3.Name = "decodeToolStripMenuItem3";
+            this.decodeToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
+            this.decodeToolStripMenuItem3.Text = "Decode";
+            this.decodeToolStripMenuItem3.Click += new System.EventHandler(this.decodeToolStripMenuItem3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -711,6 +738,9 @@
         private System.Windows.Forms.ToolStripMenuItem decodeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem encodeToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem decodeToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem gammaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem encryptToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem decodeToolStripMenuItem3;
     }
 }
 

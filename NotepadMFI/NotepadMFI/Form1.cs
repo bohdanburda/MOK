@@ -390,5 +390,25 @@ namespace NotepadMFI
                 child.TextBox.Text = result;
             }
         }
+
+        private void encryptToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Gamma gamma = new Gamma();
+            var child = (ChildForm)this.ActiveMdiChild;
+            var dataText = child.TextBox.Text;
+            var result = gamma.Encrypt(dataText);
+            child.TextBox.Text = result;
+            keyBox.Text = gamma.GammaValue;
+        }
+
+        private void decodeToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Gamma gamma = new Gamma();
+            gamma.GammaValue = keyBox.Text;
+            var child = (ChildForm)this.ActiveMdiChild;
+            var dataText = child.TextBox.Text;
+            var result = gamma.Decrypt(dataText);
+            child.TextBox.Text = result;
+        }
     }
 }
